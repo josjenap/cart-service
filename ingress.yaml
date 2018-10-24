@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: cart-service-X-ingress
+  namespace: lab-london
+spec:  
+  rules:
+    - http:
+      paths:      
+        - path: /cart-X
+          backend:
+            serviceName: cart-service-svc-X
+            servicePort: 8080
