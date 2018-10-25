@@ -2,19 +2,19 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    app: cart-service-XX
-  name: cart-service-XX
+    app: cart-service-26
+  name: cart-service-26
   namespace: lab-london
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: cart-service-XX
+        app: cart-service-26
     spec:
       containers:
-      - image: mycluster.icp:8500/lab-london/cart-service-XX:v1.0.0
-        name: cart-service-XX
+      - image: mycluster.icp:8500/lab-london/cart-service-26:v1.0.0
+        name: cart-service-26
         ports:
         - containerPort: 8080
           protocol: TCP
